@@ -10,18 +10,18 @@ Designed and engineered a complete, normalized relational database schema based 
 This project demonstrates the end-to-end database design lifecycle, from analyzing business rules to producing a production-ready, fully normalized logical schema.
 
 The process involved:
-1.  [cite_start]**Conceptual Modeling:** Analyzing requirements for complex systems (like a cloud gaming service and a professional networking site) and creating Enhanced Entity-Relationship (EER) diagrams[cite: 9, 10, 19, 30].
-2.  [cite_start]**Logical Design:** Translating the conceptual EER models into a logical relational schema (a set of tables and keys)[cite: 28].
-3.  [cite_start]**Normalization:** Systematically applying normalization rules (from 1NF to BCNF) to the logical schema to eliminate data redundancy and prevent anomalies[cite: 41, 42].
+1.  **Conceptual Modeling:** Analyzing requirements for complex systems (like a cloud gaming service and a professional networking site) and creating Enhanced Entity-Relationship (EER) diagrams.
+2.  **Logical Design:** Translating the conceptual EER models into a logical relational schema (a set of tables and keys).
+3.  **Normalization:** Systematically applying normalization rules (from 1NF to BCNF) to the logical schema to eliminate data redundancy and prevent anomalies.
 
 ---
 
 ## 1. Conceptual Modeling (EER)
 
-The first step was to translate ambiguous business rules into a formal, visual model. [cite_start]This was done using **Enhanced Entity-Relationship (EER) diagrams** in Chen notation[cite: 6, 24].
+The first step was to translate ambiguous business rules into a formal, visual model. This was done using **Enhanced Entity-Relationship (EER) diagrams** in Chen notation.
 
 This stage involved modeling complex data constructs, including:
-* [cite_start]**Specialization/Generalization:** (e.g., an `Event` entity generalizing `Social`, `Conference`, and `Sport` sub-types)[cite: 10].
+* **Specialization/Generalization:** (e.g., an `Event` entity generalizing `Social`, `Conference`, and `Sport` sub-types).
 * **Shared Subclasses (Multiple Inheritance):** Modeling entities that inherit from two or more superclasses.
 * **Categories (Union Types):** Representing relationships where one entity can be one of *several* different entity types.
 
@@ -38,16 +38,16 @@ The conceptual EER model was then mapped to a logical relational schema (a bluep
 **Process:**
 1.  **Identify Functional Dependencies (FDs):** Analyzed the attributes within each relation to determine the FDs (e.g., `StudentID -> StudentName`).
 2.  **Decomposition to BCNF:** Systematically decomposed relations that violated normalization rules.
-    * **1NF:** Ensured all attributes are atomic.
-    * **2NF:** Removed partial dependencies.
-    * **3NF:** Removed transitive dependencies.
-    * [cite_start]**BCNF (Boyce-Codd Normal Form):** Ensured every determinant is a candidate key, resolving any remaining anomalies[cite: 41, 42, 43].
+    * **1NF:** Ensured all attributes are atomic.
+    * **2NF:** Removed partial dependencies.
+    * **3NF:** Removed transitive dependencies.
+    * **BCNF (Boyce-Codd Normal Form):** Ensured every determinant is a candidate key, resolving any remaining anomalies.
 
 This process minimizes redundancy and prevents insertion, update, and deletion anomalies, resulting in a robust and maintainable database.
 
 > **[Image: Screenshot of the final normalized relational schema]**
 >
-> [cite_start]*(**Developer Note:** A screenshot of the text-based schema from **Page 6 of `db-design-normalization.pdf`**  would be perfect here to show the final logical model.)*
+> *(**Developer Note:** A screenshot of the text-based schema from **Page 6 of `db-design-normalization.pdf`**  would be perfect here to show the final logical model.)*
 
 ---
 
@@ -60,9 +60,9 @@ This project demonstrates expertise in the foundational principles of database d
 * **Logical Data Modeling:** Mapping EER diagrams to relational schemas.
 * **Database Normalization:** Applying 1NF, 2NF, 3NF, and BCNF to ensure data integrity.
 * **Data Integrity:** Using primary keys, foreign keys, and relationship cardinalities (1:1, 1:N, M:N) to enforce business rules.
-* [cite_start]**Design Tools:** `Draw.io` / `Lucidchart`[cite: 5, 23].
+* **Design Tools:** `Draw.io` / `Lucidchart`.
 
 ### Project Artifacts
-* [cite_start]**ER / EER Diagrams:** Conceptual blueprints for systems like "NCCCloud" and "FindJob"[cite: 1, 10, 19, 22].
-* [cite_start]**Normalization Report:** A step-by-step analysis of functional dependencies and the decomposition process to achieve BCNF [cite: 39, 41-44].
+* **ER / EER Diagrams:** Conceptual blueprints for systems like "NCCCloud" and "FindJob".
+* **Normalization Report:** A step-by-step analysis of functional dependencies and the decomposition process to achieve BCNF.
 * **Final Relational Schema:** A "production-ready" logical schema, fully normalized and documented.

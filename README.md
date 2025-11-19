@@ -25,9 +25,7 @@ This stage involved modeling complex data constructs, including:
 * **Shared Subclasses (Multiple Inheritance):** Modeling entities that inherit from two or more superclasses.
 * **Categories (Union Types):** Representing relationships where one entity can be one of *several* different entity types.
 
-> **[Image: EER Diagram for the "FindJob" or "Survive" Platform]**
->
-> *(**Developer Note:** Place your `FindJob_EER.png` or `Survive_EER.png` image here. It's the best example of your conceptual modeling skill.)*
+![Image: EER Diagram for the "FindJob" Platform](.media/FindJob_EER.png)
 
 ---
 
@@ -38,16 +36,14 @@ The conceptual EER model was then mapped to a logical relational schema (a bluep
 **Process:**
 1.  **Identify Functional Dependencies (FDs):** Analyzed the attributes within each relation to determine the FDs (e.g., `StudentID -> StudentName`).
 2.  **Decomposition to BCNF:** Systematically decomposed relations that violated normalization rules.
-    * **1NF:** Ensured all attributes are atomic.
-    * **2NF:** Removed partial dependencies.
-    * **3NF:** Removed transitive dependencies.
-    * **BCNF (Boyce-Codd Normal Form):** Ensured every determinant is a candidate key, resolving any remaining anomalies.
+    * **1NF:** Ensured all attributes are atomic.
+    * **2NF:** Removed partial dependencies.
+    * **3NF:** Removed transitive dependencies.
+    * **BCNF (Boyce-Codd Normal Form):** Ensured every determinant is a candidate key, resolving any remaining anomalies.
 
 This process minimizes redundancy and prevents insertion, update, and deletion anomalies, resulting in a robust and maintainable database.
 
-> **[Image: Screenshot of the final normalized relational schema]**
->
-> *(**Developer Note:** A screenshot of the text-based schema from **Page 6 of `db-design-normalization.pdf`**  would be perfect here to show the final logical model.)*
+![Image: Screenshot of the final normalized relational schema](.media/relational_schema.png)
 
 ---
 
